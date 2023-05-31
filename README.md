@@ -1,1 +1,0 @@
-# Atamyrat2005.github.io
