@@ -1,0 +1,107 @@
+/* ================== VARIABLES & GENERAL ================== */
+:root {
+    --primary-color: #14b8a6; /* A vibrant teal */
+    --primary-hover: #0d9488;
+    --bg-dark: #111827;      /* A deep, modern dark blue */
+    --bg-card: #1f2937;      /* A slightly lighter dark blue for cards */
+    --text-light: #f9fafb;
+    --text-muted: #9ca3af;
+    --border-color: #374151;
+    --section-padding: 6rem 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+.bg-dark { background-color: var(--bg-dark) !important; }
+h1, h2, h3, h4, h5, h6 { color: var(--text-light); }
+p { color: var(--text-muted); }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { background: var(--primary-color); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary-hover); }
+
+/* ================== PRELOADER & NAVBAR ================== */
+#preloader { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg-dark); z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 0.5s ease; }
+.spinner { width: 50px; height: 50px; border: 5px solid var(--border-color); border-top-color: var(--primary-color); border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+#navbar { background: rgba(31, 41, 55, 0.6); backdrop-filter: blur(10px); transition: all 0.3s ease; border-bottom: 1px solid var(--border-color); }
+#navbar.scrolled { background: var(--bg-card); box-shadow: 0 2px 15px rgba(0,0,0,0.2); }
+.nav-link.active, .nav-link:hover { color: var(--primary-color) !important; }
+.lang-switcher .dropdown-toggle::after { display: none; }
+.lang-switcher .fi { font-size: 0.9rem; }
+
+/* ================== HERO & PARTICLES.JS ================== */
+#home { width: 100%; min-height: 100vh; position: relative; color: var(--text-light); }
+#particles-js { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+#home .typed { color: var(--primary-color); font-weight: 700; }
+.profile-pic { max-width: 350px; border-radius: 50%; border: 8px solid var(--bg-card); box-shadow: 0 0 50px -10px var(--primary-color); }
+.btn-primary { background-color: var(--primary-color); border-color: var(--primary-color); transition: all 0.3s ease; }
+.btn-primary:hover { background-color: var(--primary-hover); border-color: var(--primary-hover); transform: translateY(-3px); }
+
+/* ================== SHARED ================== */
+.section-title h2 { font-size: 2.5rem; font-weight: 700; position: relative; padding-bottom: 20px; margin-bottom: 20px; }
+.section-title h2::after { content: ''; position: absolute; display: block; width: 60px; height: 4px; background: var(--primary-color); bottom: 0; left: 50%; transform: translateX(-50%); border-radius: 2px; }
+
+/* ================== ABOUT SECTION ================== */
+#about { background-color: var(--bg-card); }
+.about-text-content { background: var(--bg-dark); padding: 2.5rem; border-radius: 15px; }
+.about-img-container { position: relative; display: flex; align-items: center; justify-content: center; }
+.about-pic { width: 100%; max-width: 300px; height: 300px; object-fit: cover; border-radius: 50%; padding: 8px; background: linear-gradient(45deg, var(--primary-color), #5eead4); animation: spin-slow 10s linear infinite; }
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+.about-pic img { border-radius: 50%; }
+
+/* ================== SKILLS SECTION ================== */
+.skill-item { background: var(--bg-card); padding: 2.5rem 1rem; border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid var(--border-color); }
+.skill-item:hover { transform: translateY(-10px); box-shadow: 0 0 25px -5px var(--primary-color); }
+.skill-icon { font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem; transition: transform 0.3s ease; }
+.skill-item:hover .skill-icon { transform: rotate(10deg) scale(1.1); }
+.skill-item p { font-weight: 600; margin-bottom: 0; color: var(--text-light); }
+
+/* ================== PROJECTS SECTION ================== */
+#projects { background: var(--bg-dark); }
+.projects-subtitle { text-align: center; color: var(--primary-color); font-weight: 600; margin-bottom: 2rem; }
+.projects-divider { border-color: var(--border-color); margin: 4rem 0; }
+
+.device-mockup-link { text-decoration: none; }
+.device-mockup { background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; }
+.device-mockup:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgba(20, 184, 166, 0.25); }
+.mockup-header { display: flex; align-items: center; padding: 0.75rem; border-bottom: 1px solid var(--border-color); }
+.mockup-dots span { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 6px; }
+.mockup-dots span:nth-child(1) { background-color: #ff5f56; }
+.mockup-dots span:nth-child(2) { background-color: #ffbd2e; }
+.mockup-dots span:nth-child(3) { background-color: #27c93f; }
+.mockup-url { flex-grow: 1; text-align: center; background-color: var(--bg-dark); color: var(--text-muted); font-size: 0.8rem; padding: 0.3rem 1rem; border-radius: 6px; margin: 0 1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mockup-screen { height: 400px; overflow-y: auto; }
+.mockup-screen img { width: 100%; height: auto; display: block; }
+.mockup-footer { position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); background: rgba(17, 24, 39, 0.8); backdrop-filter: blur(5px); color: var(--primary-color); padding: 0.5rem 1rem; border-radius: 8px; font-weight: 500; opacity: 0; transition: opacity 0.3s ease; pointer-events: none; }
+.device-mockup:hover .mockup-footer { opacity: 1; }
+
+.project-card { position: relative; border-radius: 15px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+.project-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(17, 24, 39, 0.95), rgba(17, 24, 39, 0.6)); opacity: 0; transition: opacity 0.4s ease; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 1rem; }
+.project-card:hover .project-overlay { opacity: 1; }
+.swiper-pagination-bullet-active { background: var(--primary-color) !important; }
+
+/* ================== CONTACT & FOOTER ================== */
+.contact-info-container { display: flex; flex-direction: column; gap: 1.5rem; height: 100%; }
+.info-box { display: flex; align-items: center; background-color: var(--bg-card); padding: 1.5rem; border-radius: 10px; border: 1px solid var(--border-color); }
+.info-box i { font-size: 1.5rem; color: var(--primary-color); margin-right: 1.5rem; }
+.info-box h3 { font-size: 1.1rem; margin-bottom: 0.25rem; color: var(--text-light); }
+.info-box p { margin-bottom: 0; color: var(--text-muted); }
+
+.php-email-form { background-color: var(--bg-card); padding: 2rem; border-radius: 10px; border: 1px solid var(--border-color); }
+.php-email-form .form-control { background-color: var(--bg-dark); border: 1px solid var(--border-color); color: var(--text-light); border-radius: 8px; }
+.php-email-form .form-control:focus { box-shadow: 0 0 0 0.25rem rgba(20, 184, 166, 0.25); border-color: var(--primary-color); background-color: var(--bg-dark); color: var(--text-light); }
+.php-email-form .form-control::placeholder { color: var(--text-muted); }
+
+#footer { background: var(--bg-dark); border-top: 1px solid var(--border-color); }
+.social-links a { font-size: 1.2rem; display: inline-block; color: var(--text-muted); line-height: 1; margin: 0 10px; transition: 0.3s; }
+.social-links a:hover { color: var(--primary-color); transform: translateY(-3px); }
+
+/* ================== RESPONSIVE DESIGN ================== */
+@media (max-width: 991.98px) {
+    .about-img-container { min-height: auto; margin-bottom: 2rem; }
+    .about-pic { position: static; transform: none; max-width: 250px; height: 250px; margin: 0 auto; display: block; }
+}
