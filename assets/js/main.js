@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "use strict";
 
     // ========================================================================= //
-    // MULTI-LANGUAGE TRANSLATION (No Changes Here)
+    // MULTI-LANGUAGE TRANSLATION
     // ========================================================================= //
     const translations = {
         en: {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             skillsTitle: "My Skills",
             projectsTitle: "My Projects", projectsProduction: "Production Sites", projectsOther: "Other Projects & Landing Pages", viewProject: "View Project", visitLiveSite: "Visit Live Site",
             contactTitle: "Contact Me", contactSubtitle: "Have a question or want to work together? Let's talk.", contactEmail: "Email", contactPhone: "Phone", contactLocation: "Location",
-            formName: "Your Name", formEmail: "Your Email", formSubject: "Subject", formMessage: "Message", formButton: "Send Message",
+            formName: "Your Name", formEmail: "Your Email", formPhone: "Your Phone (Optional)", formSubject: "Subject", formMessage: "Message", formButton: "Send Message", // ADDED formPhone
             footerCopyright: "© Copyright <strong><span>Atamyrat</span></strong>. All Rights Reserved"
         },
         ru: {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             skillsTitle: "Мои навыки",
             projectsTitle: "Мои проекты", projectsProduction: "Рабочие сайты", projectsOther: "Другие проекты и лендинги", viewProject: "Посмотреть проект", visitLiveSite: "Посетить сайт",
             contactTitle: "Свяжитесь со мной", contactSubtitle: "Есть вопрос или хотите поработать вместе? Давайте обсудим.", contactEmail: "Эл. почта", contactPhone: "Телефон", contactLocation: "Местоположение",
-            formName: "Ваше имя", formEmail: "Ваша эл. почта", formSubject: "Тема", formMessage: "Сообщение", formButton: "Отправить сообщение",
+            formName: "Ваше имя", formEmail: "Ваша эл. почта", formPhone: "Ваш телефон (необязательно)", formSubject: "Тема", formMessage: "Сообщение", formButton: "Отправить сообщение", // ADDED formPhone
             footerCopyright: "© Все права защищены, <strong><span>Атамурат</span></strong>."
         },
         tk: {
@@ -32,11 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
             skillsTitle: "Meniň Başarnyklarym",
             projectsTitle: "Meniň Taslamalarym", projectsProduction: "Işleýän Saýtlar", projectsOther: "Beýleki Taslamalar we Landing Sahypalar", viewProject: "Taslama seret", visitLiveSite: "Saýta gir",
             contactTitle: "Men bilen Habarlaşyň", contactSubtitle: "Soragyňyz barmy ýa-da bile işleşmek isleýärsiňizmi? Geliň, gürleşeliň.", contactEmail: "E-poçta", contactPhone: "Telefon", contactLocation: "Ýerleşýän ýeri",
-            formName: "Siziň adyňyz", formEmail: "Siziň e-poçtaňyz", formSubject: "Tema", formMessage: "Hat", formButton: "Hat ugrat",
+            formName: "Siziň adyňyz", formEmail: "Siziň e-poçtaňyz", formPhone: "Siziň telefonyňyz (islege görä)", formSubject: "Tema", formMessage: "Hat", formButton: "Hat ugrat", // ADDED formPhone
             footerCopyright: "© Ähli hukuklary goragly, <strong><span>Atamyrat</span></strong>."
         }
     };
 
+    // (The rest of your JavaScript file remains exactly the same)
     const typedStrings = {
         en: ['Full-Stack Developer', 'Python Enthusiast', 'Software Creator', 'Problem Solver'],
         ru: ['Full-Stack Разработчик', 'Энтузиаст Python', 'Создатель ПО', 'Решатель Проблем'],
@@ -99,8 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const savedLang = localStorage.getItem('language') || 'en';
     setLanguage(savedLang);
-
-    // REMOVED: Swiper initialization is no longer needed.
 
     particlesJS("particles-js", {
         "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle" }, "opacity": { "value": 0.5, "random": false }, "size": { "value": 3, "random": true }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "out_mode": "out" } },

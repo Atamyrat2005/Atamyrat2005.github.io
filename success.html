@@ -1,44 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF--8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You!</title>
+    <title>Thank You! | Atamyrat</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* CSS Variables for consistency with main site */
+        :root {
+            --primary-color: #14b8a6;
+            --primary-hover: #0d9488;
+            --bg-dark: #111827;
+            --text-light: #f9fafb;
+            --text-muted: #9ca3af;
+        }
+
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #2c5364);
+            background: linear-gradient(-45deg, #111827, #1f2937, #111827);
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
-            color: #f8f9fa;
+            color: var(--text-light);
             text-align: center;
             font-family: 'Poppins', sans-serif;
         }
+
         .container {
             max-width: 600px;
-            padding: 2rem;
-            background: rgba(0, 0, 0, 0.3);
+            padding: 3rem;
+            background: rgba(31, 41, 55, 0.6);
             border-radius: 15px;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(55, 65, 81, 0.5);
         }
+
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
+
+        /* Animated Checkmark */
+        .success-animation { margin-bottom: 2rem; }
+        .checkmark {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+            stroke-width: 3;
+            stroke: var(--primary-color);
+            stroke-miterlimit: 10;
+            box-shadow: inset 0px 0px 0px #fff;
+            animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+            margin: 0 auto;
+        }
+        .checkmark__circle {
+            stroke-dasharray: 166;
+            stroke-dashoffset: 166;
+            stroke-width: 3;
+            stroke-miterlimit: 10;
+            stroke: var(--primary-color);
+            fill: none;
+            animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+        }
+        .checkmark__check {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+        }
+
+        @keyframes stroke {
+            100% { stroke-dashoffset: 0; }
+        }
+        @keyframes scale {
+            0%, 100% { transform: none; }
+            50% { transform: scale3d(1.1, 1.1, 1); }
+        }
+        @keyframes fill {
+            100% { box-shadow: inset 0px 0px 0px 50px var(--primary-color); }
+        }
+        
+        /* Button Style */
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            border-color: var(--primary-hover);
+            transform: translateY(-3px);
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="display-4">Thank You!</h1>
-        <p class="lead">Your message has been sent successfully. I will get back to you shortly.</p>
-        <a href="index.html" class="btn btn-primary btn-lg mt-3">Return to Portfolio</a>
+        <div class="success-animation">
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+        </div>
+        <h1 class="display-5 fw-bold" data-translate="thankYouTitle">Thank You!</h1>
+        <p class="lead" data-translate="thankYouMessage">Your message has been sent successfully. I will get back to you shortly.</p>
+        <a href="index.html" class="btn btn-primary btn-lg mt-3" data-translate="returnButton">Return to Portfolio</a>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const translations = {
+                en: {
+                    thankYouTitle: "Thank You!",
+                    thankYouMessage: "Your message has been sent successfully. I will get back to you shortly.",
+                    returnButton: "Return to Portfolio"
+                },
+                ru: {
+                    thankYouTitle: "Спасибо!",
+                    thankYouMessage: "Ваше сообщение успешно отправлено. Я свяжусь с вами в ближайшее время.",
+                    returnButton: "Вернуться к портфолио"
+                },
+                tk: {
+                    thankYouTitle: "Sag boluň!",
+                    thankYouMessage: "Siziň hatyňyz üstünlikli ugradyldy. Men size tiz wagtda jogap bererin.",
+                    returnButton: "Portfelio dolanmak"
+                }
+            };
+
+            const savedLang = localStorage.getItem('language') || 'en';
+
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (translations[savedLang][key]) {
+                    el.innerHTML = translations[savedLang][key];
+                }
+            });
+        });
+    </script>
 </body>
 </html>
