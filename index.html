@@ -1,442 +1,213 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atamyrat | Portfolio</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Libs and Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
 
-   <!--- basic page needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Atamyrat Şükürow - Back-End Developer</title>
-	<meta name="description" content="Portfolio of Atamyrat Şükürow, a Back-End Developer specializing in Laravel, PHP, and Python. Building scalable web applications, RESTful APIs, and efficient database solutions.">
-	<meta name="keywords" content="Atamyrat Şükürow, Atamyrat2005, Back-end Developer, Laravel Developer, PHP, Python, Docker, AWS, Full-Stack, Web Developer">
-	<meta name="author" content="Atamyrat Şükürow">
-
-   <!-- mobile specific metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
- 	<!-- CSS
-   ================================================== -->
-   <link rel="stylesheet" href="css/base.css">  
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
-
-   <!-- script
-   ================================================== -->   
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
-
-   <!-- favicons
-	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
-
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-<body id="top">
-
-	<!-- header 
-   ================================================== -->
-   <header>   	
-   	<div class="row">
-
-   		<div class="top-bar">
-   			<a class="menu-toggle" href="#"><span>Menu</span></a>
-
-	   		<div class="logo1">
-				<a href="index.html">Atamyrat</a>
-		      </div>		      
-
-		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Projects</a></li>
-						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>
-					</ul>
-				</nav>    		
-   		</div> <!-- /top-bar --> 
-   		
-   	</div> <!-- /row --> 		
-   </header> <!-- /header -->
-
-	<!-- intro section
-   ================================================== -->
-   <section id="intro">   
-
-   	<div class="intro-overlay"></div>	
-
-   	<div class="intro-content">
-   		<div class="row">
-
-   			<div class="col-twelve">
-
-	   			<h5>Hello, World.</h5>
-	   			<h1>I'm Atamyrat Şükürow.</h1>
-
-	   			<p class="intro-position">
-	   				<span>Back-End Developer</span> 
-	   				<span>Laravel & Python Specialist</span>
-	   			</p>
-
-	   			<a class="button stroke smoothscroll" href="#about" title="">Discover More</a>
-
-	   		</div>  
-   			
-   		</div>   		 		
-   	</div> <!-- /intro-content --> 
-
-   	<ul class="intro-social">        
-         <li><a href="https://www.facebook.com/atamyrat.sukurow" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a></li>
-         <li><a href="https://www.instagram.com/sukurow_atamyrat" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
-         <li><a href="https://github.com/Atamyrat2005" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></li>
-         <li><a href="https://twitter.com/atamyrat2005" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></li>
-         <li><a href="https://www.linkedin.com/in/atamyrat05" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></li>
-      </ul> <!-- /intro-social -->      	
-
-   </section> <!-- /intro -->
-
-
-   <!-- about section
-   ================================================== -->
-   <section id="about">  
-
-   	<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>About Me</h5>
-   			<h1>Let me introduce myself.</h1>
-
-   			<div class="intro-info">
-
-   				<img src="images/profile-pic.jpg" alt="Atamyrat Şükürow Profile Picture">
-
-   				<p class="lead">I am a passionate Back-End Developer with a strong foundation in creating scalable, secure, and high-performance web applications. My expertise lies in the Laravel framework and PHP, but I am also proficient with Python and its frameworks like Django. I thrive on solving complex problems, architecting robust database systems, and exploring modern technologies like Docker and AWS to streamline development and deployment.</p>
-   			</div>   			
-
-   		</div>   		
-   	</div> <!-- /section-intro -->
-
-   	<div class="row about-content">
-
-   		<div class="col-six tab-full">
-
-   			<h3>Profile</h3>
-   			<p>With over 4 years of coding experience, I focus on writing clean, efficient, and maintainable code to build powerful digital solutions.</p>
-
-   			<ul class="info-list">
-   				<li>
-   					<strong>Full Name:</strong>
-   					<span>Atamyrat Şükürow</span>
-   				</li>
-   				<li>
-   					<strong>Location:</strong>
-   					<span>Ashgabat, Turkmenistan</span>
-   				</li>
-   				<li>
-   					<strong>Primary Focus:</strong>
-   					<span>Web Application Development</span>
-   				</li>
-   				<li>
-   					<strong>GitHub:</strong>
-   					<a href="https://github.com/Atamyrat2005" target="_blank" rel="noopener noreferrer">@atamyrat2005</a>
-   				</li>
-   				<li>
-   					<strong>Email:</strong>
-   					<a href="mailto:komputeratamyrat@gmail.com">komputeratamyrat@gmail.com</a>
-   				</li>
-   			</ul> <!-- /info-list -->
-
-   		</div>
-
-   		<div class="col-six tab-full">
-
-   			<h3>Skills</h3>
-   			<p>My technical toolkit is centered around modern web technologies, allowing me to build comprehensive solutions from the server to the client.</p>
-
-			<div class="skill-categories">
-				<strong>Back-End:</strong>
-				<p>PHP, Laravel, Python, Django, Node.js, RESTful APIs, Livewire</p>
-				
-				<strong>Front-End:</strong>
-				<p>HTML5, CSS3, JavaScript (ES6+), Bootstrap, Alpine.js, jQuery, React (basic)</p>
-
-				<strong>Databases:</strong>
-				<p>MySQL, PostgreSQL, Database Design & Optimization</p>
-
-				<strong>DevOps & Tools:</strong>
-				<p>Docker, Nginx, AWS (basic), Git, Ubuntu, Kali Linux, VS Code</p>
-			</div>
-   		</div>
-
-   	</div>
-
-   </section> <!-- /process-->    
-
-
-   <!-- resume Section
-   ================================================== -->
-	<section id="resume" class="grey-section">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Portfolio</h5>
-   			<h1>Check Out My Projects.</h1>
-
-   			<p class="lead">Here are some of the key projects I've worked on, showcasing my skills in back-end logic, database architecture, and real-time features.</p>
-
-   		</div>   		
-   	</div> <!-- /section-intro--> 
-
-   	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-   			<h2>Featured Work</h2>
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-   			<div class="timeline-wrap">
-
-				<div class="timeline-block">
-	   				<div class="timeline-ico"><i class="fa fa-shopping-cart"></i></div>
-	   				<div class="timeline-header">
-	   					<h3>Advanced E-commerce Platform</h3>
-	   					<p>2023</p>
-	   				</div>
-	   				<div class="timeline-content">
-	   					<h4>Full-featured online store with an advanced admin dashboard.</h4>
-	   					<p>Developed a complete e-commerce solution with product management, order tracking, user authentication, and a powerful dashboard for analytics and site administration. The system is built for scalability and performance.
-						<br><strong>Tech Stack:</strong> PHP, Laravel, MySQL, JavaScript, Bootstrap, jQuery.
-						<br><a href="https://github.com/Atamyrat2005/e-commerce-laravel" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> View on GitHub</a>
-						</p>
-	   				</div>
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-	   				<div class="timeline-ico"><i class="fa fa-comments"></i></div>
-	   				<div class="timeline-header">
-	   					<h3>Real-time Chat Application</h3>
-	   					<p>2023</p>
-	   				</div>
-	   				<div class="timeline-content">
-	   					<h4>Instant messaging application using modern real-time technologies.</h4>
-	   					<p>Built a dynamic chat application enabling users to communicate in real-time. This project demonstrates my ability to integrate third-party services like Pusher and build interactive front-ends with Livewire and Alpine.js.
-						<br><strong>Tech Stack:</strong> Laravel, Livewire, Alpine.js, Pusher, Tailwind CSS.
-						<br><a href="https://github.com/Atamyrat2005/laravel-realtime-chat" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> View on GitHub</a>
-						</p>
-	   				</div>
-	   			</div> <!-- /timeline-block -->
-
-	   			<div class="timeline-block">
-					<div class="timeline-ico"><i class="fa fa-home"></i></div>
-					<div class="timeline-header">
-						<h3>Advanced Real Estate Platform</h3>
-						<p>2022</p>
-					</div>
-					<div class="timeline-content">
-						<h4>A comprehensive platform for listing and finding properties.</h4>
-						<p>Created a robust real estate website with advanced search filters, property listings, agent profiles, and user role management. The project features a well-designed database schema to handle complex relationships between listings, users, and locations.
-						<br><strong>Tech Stack:</strong> PHP, Laravel, MySQL, Bootstrap, jQuery, Sass.
-						<br><a href="https://github.com/Atamyrat2005/Real-estate-laravel" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> View on GitHub</a>
-						</p>
-					</div>
-				</div> <!-- /timeline-block -->
- 
-				<div class="timeline-block">
-				 <div class="timeline-ico"><i class="fa fa-cloud"></i></div>
-				 <div class="timeline-header">
-					 <h3>Weather Forecast App</h3>
-					 <p>2022</p>
-				 </div>
-				 <div class="timeline-content">
-					 <h4>Simple and clean weather application using Django.</h4>
-					 <p>A demonstration of my Python and Django skills. This application fetches and displays real-time weather data from a third-party API, showcasing my ability to work with external services and render data dynamically.
-						<br><strong>Tech Stack:</strong> Python, Django, HTML, CSS, OpenWeatherMap API.
-						<br><a href="https://github.com/Atamyrat2005/Weather-app-python-django" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> View on GitHub</a>
-					</p>
-				 </div>
-			 </div> <!-- /timeline-block -->
-
-			<div class="timeline-block">
-				<div class="timeline-ico"><i class="fa fa-docker" style="font-family: 'FontAwesome' !important;"></i></div>
-				<div class="timeline-header">
-					<h3>Local Docker Development Environment</h3>
-					<p>Ongoing</p>
-				</div>
-				<div class="timeline-content">
-					<h4>A complete, containerized setup for Laravel development.</h4>
-					<p>Engineered a multi-container Docker environment for local development, featuring Nginx, MySQL, Redis, and MailHog. This project highlights my skills in DevOps, containerization, and creating efficient, reproducible development workflows.
-						<br><strong>Tech Stack:</strong> Docker, Docker Compose, Nginx, MySQL, Redis.
-						<br><a href="https://github.com/Atamyrat2005/laravel-docker" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> View on GitHub</a>
-					</p>
-				</div>
-			</div> <!-- /timeline-block -->
-
-   			</div> <!-- /timeline-wrap -->   			
-   		</div> <!-- /col-twelve -->
-   	</div> <!-- /resume-timeline -->
-   	
-   	<div class="row resume-timeline">
-   		<div class="col-twelve resume-header">
-   			<h2>Education</h2>
-   		</div> <!-- /resume-header -->
-   		<div class="col-twelve">
-   			<div class="timeline-wrap">
-   				<div class="timeline-block">
-	   				<div class="timeline-ico"><i class="fa fa-graduation-cap"></i></div>
-	   				<div class="timeline-header">
-	   					<h3>Institute of Telecommunications and Informatics</h3>
-	   					<p>Sep 2023 - Present</p>
-	   				</div>
-	   				<div class="timeline-content">
-	   					<h4>Studying Information Technologies and Programming</h4>
-	   					<p>Pursuing formal education to complement my practical experience, focusing on computer science fundamentals, advanced algorithms, and software engineering principles.</p>
-	   				</div>
-	   			</div> <!-- /timeline-block -->
-   			</div> <!-- /timeline-wrap -->   			
-   		</div> <!-- /col-twelve -->
-   	</div> <!-- /resume-timeline -->
-		
-	</section> <!-- /features -->
-
-
-	<!-- CTA Section
-   ================================================== -->
-	<section id="cta" class="grey-section">
-   	<div class="row cta-content">
-   		<div class="col-twelve section-ads">  
-	     		<h2 class="h01">Let's Build Something Great Together.</h2>
-		      <p class="lead">
-		      I'm currently available for freelance projects and open to new opportunities. If you have an idea you'd like to discuss or a project you need help with, feel free to get in touch.
-				</p>
-				<div class="action">
-			      <a class="button button-primary large" href="mailto:komputeratamyrat@gmail.com">Contact Me</a>
-				  <a class="button large" href="https://github.com/Atamyrat2005" target="_blank" rel="noopener noreferrer">View GitHub</a>
-		      </div>		     	
-   		</div>
-   	</div> <!-- /cta-content -->
-   </section> <!-- /cta --> 
-
-	
-	<!-- services Section
-   ================================================== -->
-	<section id="services">
-		<div class="overlay"></div>
-		<div class="row section-intro">
-   		<div class="col-twelve">
-   			<h5>Services</h5>
-   			<h1>What I Can Do For You</h1>
-   			<p class="lead">I offer a range of services to bring your digital projects to life, focusing on quality, performance, and modern development standards.</p>
-   		</div>   		
-   	</div> <!-- /section-intro -->
-
-   	<div class="row services-content">
-   		<div id="owl-slider" class="owl-carousel services-list">
-	      	<div class="service">	
-	      		<span class="icon"><i class="icon-server"></i></span>            
-	            <div class="service-content">	
-	            	 <h3>Robust Back-End Architecture</h3>
-		            <p class="desc">Designing and building the core logic of your application using Laravel or Python. I create secure, scalable, and efficient server-side systems and RESTful APIs to power your web or mobile app.
-	         		</p>
-	         	</div> 	         	 
-				</div> <!-- /service -->
-
-				<div class="service">	
-					<span class="icon"><i class="icon-window"></i></span>                          
-	            <div class="service-content">	
-	            	<h3>Full-Stack Development</h3>  
-		            <p class="desc">From database design to the user interface, I can manage the entire development lifecycle to deliver a complete, polished, and functional web application that meets your business needs.
-	         		</p>
-	            </div>	                          
-			   </div> <!-- /service -->
-
-				<div class="service">
-					<span class="icon"><i class="icon-database"></i></span>	              
-	            <div class="service-content">
-	            	<h3>Database Design & Optimization</h3>
-		            <p class="desc">Structuring and optimizing relational databases (MySQL, PostgreSQL) to ensure data integrity, fast query performance, and scalability as your application grows.
-	         		</p> 
-	            </div>                
-				</div> <!-- /service -->
-
-				<div class="service">
-					<span class="icon"><i class="icon-gears"></i></span>	              
-	            <div class="service-content">
-	            	<h3>DevOps & Deployment</h3>
-		            <p class="desc">Setting up development and production environments using tools like Docker and Nginx. I can help containerize your application and streamline your deployment process.
-	         		</p> 
-	            </div>                
-				</div> <!-- /service -->
-
-	      </div> <!-- /services-list -->
-   	</div> <!-- /services-content -->
-	</section> <!-- /services -->	
-
-
-	<!-- stats Section - This section can be removed if you prefer a more minimal look.
-   ================================================== -->
-	<section id="stats" class="count-up">
-		<div class="row">
-			<div class="col-twelve">
-				<div class="block-1-4 block-s-1-2 block-tab-1-2 block-mob-full stats-list">
-					<div class="bgrid stat">
-						<div class="icon-part"><i class="icon-briefcase"></i></div>
-						<h3 class="stat-count">15</h3>
-						<h5 class="stat-title">GitHub Repositories</h5>
-					</div> <!-- /stat -->					
-
-					<div class="bgrid stat">
-						<div class="icon-part"><i class="icon-calendar"></i></div>
-						<h3 class="stat-count">4</h3>
-						<h5 class="stat-title">Years of Experience</h5>
-					</div> <!-- /stat -->									
-
-					<div class="bgrid stat">
-						<div class="icon-part"><i class="icon-tools"></i></div>
-						<h3 class="stat-count">10</h3>
-						<h5 class="stat-title">Core Technologies</h5>
-					</div> <!-- /stat -->
-					
-					<div class="bgrid stat">
-						<div class="icon-part"><i class="icon-cup"></i></div>
-						<h3 class="stat-count">1350</h3>
-						<h5 class="stat-title">Cups of Tea</h5>
-					</div> <!-- /stat -->
-				</div> <!-- /stats-list -->
-			</div> <!-- /twelve -->
-		</div> <!-- /row -->
-	</section> <!-- /stats -->
-
-   <!-- footer
-   ================================================== -->
-
-   <footer style="padding-top: 25px ;">
-     	<div class="row">
-      	<div class="tab-full text-center ">
-	      	<div class="copyright">
-		        	<span>© Copyright 2024</span> 
-		        	<span>Design by <a href="https://github.com/Atamyrat2005" target="_blank" rel="noopener noreferrer">Atamyrat Şükürow</a></span>         	
-		         </div>	    
-	      	</div>
-				             
-	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		      </div>
-
-      	</div> <!-- /row -->     	
-   </footer>  
-
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
-
-   <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
+
+    <div id="preloader"><div class="spinner"></div></div>
+
+    <header id="header">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Atamyrat</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#home" data-translate="navHome">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" data-translate="navAbout">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills" data-translate="navSkills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects" data-translate="navProjects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" data-translate="navContact">Contact</a></li>
+                        <li class="nav-item dropdown lang-switcher">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="fi fi-gb"></span> EN
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#" onclick="setLanguage('en')"><span class="fi fi-gb me-2"></span>English</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="setLanguage('ru')"><span class="fi fi-ru me-2"></span>Русский</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="setLanguage('tk')"><span class="fi fi-tm me-2"></span>Türkmen</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="d-flex align-items-center">
+        <div id="particles-js"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-2 fw-bold" data-aos="fade-up" data-translate="heroTitle">Hello, I'm Atamyrat</h1>
+                    <h2 class="mb-4" data-aos="fade-up" data-aos-delay="200"><span data-translate="heroSubtitle">I'm a</span> <span class="typed"></span></h2>
+                    <p class="lead mb-4" data-aos="fade-up" data-aos-delay="300" data-translate="heroQuote">My interest is to create and develop useful software that can make a person's life better.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="400" data-translate="heroButton">Let's Connect <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="assets/img/profile.jpg" class="img-fluid profile-pic" alt="Atamyrat's Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main">
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="section-title text-center" data-aos="fade-up"><h2 data-translate="aboutTitle">About Me</h2></div>
+                <div class="row gx-lg-5 align-items-center">
+                    <div class="col-lg-5 about-img-container" data-aos="fade-right">
+                        <img src="assets/img/profile.jpg" class="img-fluid about-pic" alt="Atamyrat">
+                    </div>
+                    <div class="col-lg-7 about-text-content" data-aos="fade-left" data-aos-delay="100">
+                        <h3 class="fw-bold" data-translate="aboutHeader">Full-Stack Developer & Python Enthusiast</h3>
+                        <p class="fst-italic" data-translate="aboutSubheader">A passionate developer with a strong foundation in both front-end and back-end technologies.</p>
+                        <p data-translate="aboutParagraph">My journey started with Python, building everything from desktop apps to fun games. I've since expanded into full-stack web development with Django, creating robust and scalable applications. I thrive on learning new technologies and solving complex problems, always aiming to build meaningful applications that have a positive impact.</p>
+                        <a href="#" class="btn btn-outline-primary" data-translate="aboutButton">Download CV <i class="fas fa-download ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-5 bg-dark">
+            <div class="container">
+                <div class="section-title text-center" data-aos="fade-up"><h2 data-translate="skillsTitle">My Skills</h2></div>
+                <div class="row text-center gy-4">
+                    <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100"><div class="skill-item"><i class="fab fa-laravel skill-icon"></i><p>Laravel</p></div></div>
+                    <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="200"><div class="skill-item"><i class="fab fa-php skill-icon"></i><p>Php</p></div></div>
+                    <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100"><div class="skill-item"><i class="fab fa-python skill-icon"></i><p>Python</p></div></div>
+                    <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100"><div class="skill-item"><i class="fa-brands fa-dart-lang skill-icon"></i><p>Dart</p></div></div>
+                    <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="200"><div class="skill-item"><i class="fa-brands fa-flutter skill-icon"></i><p>Flutter</p></div></div>
+                    <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300"><div class="skill-item"><i class="fab fa-html5 skill-icon"></i><p>HTML5</p></div></div>
+                    <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="400"><div class="skill-item"><i class="fab fa-css3-alt skill-icon"></i><p>CSS3</p></div></div>
+                    <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300"><div class="skill-item"><i class="fab fa-bootstrap skill-icon"></i><p>Bootstrap</p></div></div>
+                    <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="500"><div class="skill-item"><i class="fab fa-js-square skill-icon"></i><p>JavaScript</p></div></div>
+                    <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="700"><div class="skill-item"><i class="fa-brands fa-git skill-icon"></i><p>Git & GitHub</p></div></div>
+                    <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="800"><div class="skill-item"><i class="fas fa-database skill-icon"></i><p>MySQL & PostgreSQL</p></div></div>
+                    <div class="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-delay="800"><div class="skill-item"><i class="fas fa-server skill-icon"></i><p>Apache & Nginx</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5">
+            <div class="container">
+                <div class="section-title text-center" data-aos="fade-up"><h2 data-translate="projectsTitle">My Projects</h2></div>
+                
+                <h3 class="projects-subtitle" data-aos="fade-up" data-translate="projectsProduction">Production Sites</h3>
+                <div class="row gy-5 justify-content-center">
+                    <!-- Sanly Bazar Mockup -->
+                    <div class="col-lg-10 col-xl-9" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="text-center mb-3">Sanly Bazar</h4>
+                        <a href="https://sanlybazar.alemtilsimat.com/" target="_blank" class="device-mockup-link">
+                            <div class="device-mockup"><div class="mockup-header"><div class="mockup-dots"><span></span><span></span><span></span></div><div class="mockup-url">sanlybazar.alemtilsimat.com</div></div><div class="mockup-screen"><img src="assets/img/sanlybazar.png" alt="Sanly Bazar Homepage Screenshot"></div><div class="mockup-footer"><span data-translate="visitLiveSite"><i class="fas fa-external-link-alt me-2"></i>Visit Live Site</span></div></div>
+                        </a>
+                    </div>
+                    <!-- Turkmen Travel Mockup -->
+                    <div class="col-lg-10 col-xl-9" data-aos="fade-up" data-aos-delay="200">
+                        <h4 class="text-center mb-3">Turkmen Travel</h4>
+                         <a href="https://turkmentravels.com/" target="_blank" class="device-mockup-link">
+                            <div class="device-mockup"><div class="mockup-header"><div class="mockup-dots"><span></span><span></span><span></span></div><div class="mockup-url">turkmentravels.com</div></div><div class="mockup-screen"><img src="assets/img/turkmentravel.png" alt="Turkmen Travel Homepage Screenshot"></div><div class="mockup-footer"><span data-translate="visitLiveSite"><i class="fas fa-external-link-alt me-2"></i>Visit Live Site</span></div></div>
+                        </a>
+                    </div>
+                </div>
+
+                <hr class="projects-divider">
+
+                <h3 class="projects-subtitle" data-aos="fade-up" data-translate="projectsOther">Other Projects & Landing Pages</h3>
+                
+                <!-- OTHER PROJECTS MOCKUPS (REPLACES SWIPER) -->
+                <div class="row gy-5 justify-content-center">
+                    <!-- Prestige Home Mockup -->
+                    <div class="col-lg-10 col-xl-9" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="text-center mb-3">Prestige Home</h4>
+                        <a href="https://atamyrat2005.github.io/prestigehometm.github.io/" target="_blank" class="device-mockup-link">
+                            <div class="device-mockup"><div class="mockup-header"><div class="mockup-dots"><span></span><span></span><span></span></div><div class="mockup-url">atamyrat2005.github.io</div></div><div class="mockup-screen"><img src="assets/img/prestige-home.png" alt="Prestige Home Screenshot"></div><div class="mockup-footer"><span data-translate="visitLiveSite"><i class="fas fa-external-link-alt me-2"></i>Visit Live Site</span></div></div>
+                        </a>
+                    </div>
+                    <!-- Hytay Haryt Mockup -->
+                    <div class="col-lg-10 col-xl-9" data-aos="fade-up" data-aos-delay="200">
+                        <h4 class="text-center mb-3">Hytay Haryt</h4>
+                         <a href="https://atamyrat2005.github.io/hytayharyt/" target="_blank" class="device-mockup-link">
+                            <div class="device-mockup"><div class="mockup-header"><div class="mockup-dots"><span></span><span></span><span></span></div><div class="mockup-url">atamyrat2005.github.io</div></div><div class="mockup-screen"><img src="assets/img/hytay-haryt.png" alt="Hytay Haryt Screenshot"></div><div class="mockup-footer"><span data-translate="visitLiveSite"><i class="fas fa-external-link-alt me-2"></i>Visit Live Site</span></div></div>
+                        </a>
+                    </div>
+                    <!-- Cyber Security Mockup -->
+                    <div class="col-lg-10 col-xl-9" data-aos="fade-up" data-aos-delay="300">
+                        <h4 class="text-center mb-3">Cyber Security</h4>
+                         <a href="https://atamyrat2005.github.io/Cyber-security/" target="_blank" class="device-mockup-link">
+                            <div class="device-mockup"><div class="mockup-header"><div class="mockup-dots"><span></span><span></span><span></span></div><div class="mockup-url">atamyrat2005.github.io</div></div><div class="mockup-screen"><img src="assets/img/cyber-security.png" alt="Cyber Security Screenshot"></div><div class="mockup-footer"><span data-translate="visitLiveSite"><i class="fas fa-external-link-alt me-2"></i>Visit Live Site</span></div></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 bg-dark">
+            <div class="container">
+                <div class="section-title text-center" data-aos="fade-up"><h2 data-translate="contactTitle">Contact Me</h2><p data-translate="contactSubtitle">Have a question or want to work together? Let's talk.</p></div>
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <div class="contact-info-container">
+                            <div class="info-box" data-aos="fade-up" data-aos-delay="100"><i class="fas fa-envelope"></i><div><h3 data-translate="contactEmail">Email</h3><p>komputeratamyrat@gmail.com</p></div></div>
+                            <div class="info-box" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-phone"></i><div><h3 data-translate="contactPhone">Phone</h3><p>+993 61 21 64 83</p></div></div>
+                            <div class="info-box" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-map-marker-alt"></i><div><h3 data-translate="contactLocation">Location</h3><p>Ashgabat, Turkmenistan</p></div></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="400">
+                        <form action="https://api.web3forms.com/submit" method="POST" role="form" class="php-email-form">
+                            <input type="hidden" name="access_key" value="48692453-7d72-4067-8b08-92f2ea37e10c">
+                            <input type="hidden" name="redirect" value="https://atamyrat2005.github.io/portfolio/success.html">
+                            <input type="hidden" name="from_name" value="Atamyrat's Portfolio">
+                            <input type="hidden" name="subject" value="New Contact Form Submission">
+                            <div class="row">
+                                <div class="col-md-6 form-group mb-3"><input type="text" name="name" class="form-control" placeholder="Your Name" required data-translate="formName,placeholder"></div>
+                                <div class="col-md-6 form-group mb-3"><input type="email" class="form-control" name="email" placeholder="Your Email" required data-translate="formEmail,placeholder"></div>
+                            </div>
+                            <div class="form-group mb-3"><input type="text" class="form-control" name="message_subject" placeholder="Subject" required data-translate="formSubject,placeholder"></div>
+                            <div class="form-group mb-3"><textarea class="form-control" name="message" rows="5" placeholder="Message" required data-translate="formMessage,placeholder"></textarea></div>
+                            <div class="text-center"><button type="submit" class="btn btn-primary" data-translate="formButton">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="text-white text-center py-4">
+        <div class="container">
+            <div class="social-links mb-3">
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/atamyrat_y" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Atamyrat2005" class="github" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <span data-translate="footerCopyright">© Copyright <strong><span>Atamyrat</span></strong>. All Rights Reserved</span>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
